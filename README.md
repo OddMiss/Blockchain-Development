@@ -133,4 +133,5 @@
 
 # Session 4
 
-- See in `Code.ipynb`
+- Remix: https://remix.ethereum.org/
+- Solidity Doc: https://docs.soliditylang.org/en/v0.8.30/
