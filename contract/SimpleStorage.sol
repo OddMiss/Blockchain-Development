@@ -33,9 +33,10 @@ logs	[]
 raw logs	[]
 */
 
+// ==========================================================
 // private variable
 // contract SimpleStorage {
-//     uint256 favoriteNumber; // uint256 is the same as uint, private value
+//     uint256 favoriteNumber; // uint256 is the same as uint, default visibility is internal
 //     function store(uint256 _favoriteNumber) public {
 //         favoriteNumber = _favoriteNumber;
 //     }
@@ -69,13 +70,15 @@ logs	[]
 raw logs	[]
 */
 
+// ==========================================================
 // If we would like to make the variable public, we can use this:
-contract SimpleStorage {
-    uint256 public favoriteNumber; // uint256 is the same as uint
-    function store(uint256 _favoriteNumber) public {
-        favoriteNumber = _favoriteNumber;
-    }
-}
+// contract SimpleStorage {
+//     uint256 public favoriteNumber; // uint256 is the same as uint
+//     function store(uint256 _favoriteNumber) public {
+//         favoriteNumber = _favoriteNumber;
+//     }
+// }
+
 /*
 for this contract, after we execute the store funtion, we can call favoriteNumber to get this number
 
@@ -95,3 +98,40 @@ decoded output	{
 logs	[]
 raw logs	[]
 */
+
+// The more computational expensive cost, the more the gas fee
+
+// ==========================================================
+//⭐scope
+// contract SimpleStorage {
+//     uint256 public favoriteNumber; // uint256 is the same as uint
+//     function store(uint256 _favoriteNumber) public {
+//         favoriteNumber = _favoriteNumber;
+//         uint256 testVar = 9;
+//     }
+
+//     function testfun() public {
+//         testVar = 5; // error, testVar is not in this scope
+//     }
+// }
+
+// ==========================================================
+// return function
+contract SimpleStorage {
+    uint256 public favoriteNumber; // uint256 is the same as uint
+    function store(uint256 _favoriteNumber) public {
+        favoriteNumber = _favoriteNumber;
+    }
+
+    // view (don't allow to modify blockchain at all) 
+    // (Cost only applies when called by a contract, and no tranaction cost)
+    function retrive_value() public view returns(uint256){
+        return favoriteNumber;
+    }
+
+    // pure (Cost like view, additionally, pure don't allow to read from blockchian state)
+    function add_value() public pure  returns(uint256){
+        // return favoriteNumber; // error
+        return 1 + 2;
+    }
+}
