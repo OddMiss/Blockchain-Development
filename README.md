@@ -1,10 +1,9 @@
-> https://www.youtube.com/watch?v=gyMwXuJrbJQ&t=102745s (Patrick Collins Course👍)
-> 
-> https://youtu.be/gyMwXuJrbJQ?si=NU6k26BrnTbeGUDX
-> 
-> https://youtu.be/z7Vz8ZKylc4?si=okoz4sQUwzbC8s60
-> 
-> [Decentralized Finance](https://rdi.berkeley.edu/berkeley-defi/f24)
+> This Solidity tutorial is based on: https://www.youtube.com/watch?v=gyMwXuJrbJQ&t=102745s (Patrick Collins Course👍)
+
+- Extensions
+  - https://youtu.be/gyMwXuJrbJQ?si=NU6k26BrnTbeGUDX
+  - https://youtu.be/z7Vz8ZKylc4?si=okoz4sQUwzbC8s60
+  - [Decentralized Finance](https://rdi.berkeley.edu/berkeley-defi/f24)
 
 (2025.9.13)
 
@@ -43,7 +42,7 @@
 - Private Key
 
 > Test Phrase
-> 
+>
 > 1. prize
 > 2. modify
 > 3. frown
@@ -62,13 +61,13 @@
 - Faucet
 
 > https://cloud.google.com/application/web3/faucet
-> 
+>
 > https://faucets.chain.link/
-> 
+>
 > https://faucet.polygon.technology/
 
 - Transaction interpret
-  
+
   - hash
   - status
   - block
@@ -79,7 +78,7 @@
   - gas price / gas limit / usage by Txn / gas fees (Base, Max, Max Priority) / burnt
 
 > (gas is a unit of computational measurement. The more complex your transaction, the more gas you have to pay.) (gas prive × gas usage = transaction fee) (Ether and Gwei converter: https://eth-converter.com/)
-> 
+>
 > (Extension: [Can ETH Become DEFLATIONARY? EIP 1559 Explained - YouTube](https://www.youtube.com/watch?v=MGemhK9t44Q&t=1s))
 
 - Blockchain demo: [Blockchain Demo](https://andersbrownworth.com/blockchain/)
@@ -96,39 +95,24 @@
 # Session 3, Fundamentals
 
 - Consensus
-
 - Chain Selection
-
 - Sybil Resistance: such as PoW (Miner), PoS (Validator)
 
 > PoS nodes put up (stake) some collateral that they're going to behave honestly.
 
 - ETH (PoW), ETH 2.0 (PoS)
-
 - Block time
-
 - Sybil Attack
-
 - 51% Attack (Reference: ETH Classic and ETH)
-
 - Nakamoto consensus: PoW and longest chain rule
-
 - Transaction fee + block reward
-
 - Block confirmations
-
 - Randomness is important in blockchain
-
 - Scalability (lack of blockchain space and high gas fee)
-
 - ❓Sharding (a solution to solve scalability problem)
-
 - Layer 1: Base layer blockchain implementation (such as BTC, ETH)
-
 - Layer 2: Any application built on top of a layer 2 (such as chainlink, arbitrage, optimism)
-
 - ❓ Rollups: Some layser 2 (such as arbitrage) roll up their transactions into a layer on like ETH
-
 - Side chains: It is different from rollups. Their derive their security from their own protocols instead of base layers.
 
 # Session 4
